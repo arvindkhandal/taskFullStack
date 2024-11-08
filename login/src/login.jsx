@@ -22,7 +22,7 @@ const Login = () => {
                     return response.json();
                 })
                     .then(data => {
-                        if (data?.message=="User login successful") {
+                        if (data?.message==="User login successful") {
                             localStorage.setItem("user", true)
                             navigate('/home')
 
